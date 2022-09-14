@@ -1,0 +1,8 @@
+<launch> 
+    <!-- Run a joined stream of two bastler cameras -->
+    <node pkg="ojos" type="joinmultiplecameras.py" name="joined_camera_image" output="screen"/>
+
+    <!--<node pkg="webrtc_ros" type="webrtc_ros_server_node" name="webrtc" output="screen" args="_image_transport:=compressed"/>-->
+    <node pkg="web_video_server" type="web_video_server" name="webrtc" output="screen" args="_ros_threads:=3 _port:=25564"/>
+   
+</launch>

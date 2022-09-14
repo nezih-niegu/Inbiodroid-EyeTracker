@@ -1,0 +1,9 @@
+<launch> 
+    <!-- run data_test.py -->
+    <node pkg="ojos" type="data_test.py" name="data_test" output="screen">
+        <param name="csv" value="$(find ojos)/data/EyeTracking2.csv"/>
+    </node>
+    <node pkg="ojos" type="videoplayer.py" name="video" output="screen">
+        <param name="mp4" value="$(find ojos)/data/Cara2.mp4"/>
+    </node>
+</launch>

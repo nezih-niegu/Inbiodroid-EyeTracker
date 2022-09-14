@@ -1,0 +1,425 @@
+<sdf version="1.6">
+    <model name="onshape">
+
+        <link name="ae_2dof_b_x1">
+            <frame name="ae_2dof_b_x1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_b_x1_0_ae_2dof_b_x1_visual">
+                <pose>3.68629e-18 0.022 -1.37008e-17 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_b_x1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.792157 0.819608 0.933333 1</ambient>
+                    <diffuse>0.792157 0.819608 0.933333 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_b_x1_0_ae_2dof_b_x1_visual">
+                <pose>3.68629e-18 0.022 -1.37008e-17 -1.5708 -1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_b_x1.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_b_x1_frame">0.0236304 0.0170064 0.023624 0 0 0</pose>
+                <mass>0.0680606</mass>
+                <inertia>
+                    <ixx>7.6719e-05</ixx>
+                    <ixy>-3.40547e-09</ixy>
+                    <ixz>-2.42982e-09</ixz>
+                    <iyy>4.49475e-05</iyy>
+                    <iyz>2.23644e-05</iyz>
+                    <izz>4.49198e-05</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <link name="ae_2dof_e1_x1">
+            <frame name="ae_2dof_e1_x1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_e1_x1_0_ae_2dof_e1_x1_visual">
+                <pose>0.053 0.0492775 0.0516161 2.97268 -5.13992e-17 9.01546e-28</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_e1_x1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_e1_x1_0_ae_2dof_e1_x1_visual">
+                <pose>0.053 0.0492775 0.0516161 2.97268 -5.13992e-17 9.01546e-28</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_e1_x1.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_e1_x1_frame">0.0272465 0.0340377 0.0542151 0 0 0</pose>
+                <mass>0.00262801</mass>
+                <inertia>
+                    <ixx>5.63564e-07</ixx>
+                    <ixy>-4.15871e-07</ixy>
+                    <ixz>-7.09236e-08</ixz>
+                    <iyy>6.5422e-07</iyy>
+                    <iyz>-8.84316e-08</iyz>
+                    <izz>1.15767e-06</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <link name="ae_2dof_e2_x1">
+            <frame name="ae_2dof_e2_x1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_e2_x1_0_ae_2dof_e2_x1_visual">
+                <pose>0.053 0.0492775 0.0516161 1.50605 1.40152 -1.63647</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_e2_x1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_e2_x1_0_ae_2dof_e2_x1_visual">
+                <pose>0.053 0.0492775 0.0516161 1.50605 1.40152 -1.63647</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_e2_x1.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_e2_x1_frame">0.053 0.0302145 0.0548665 0 0 0</pose>
+                <mass>0.00267944</mass>
+                <inertia>
+                    <ixx>1.70415e-06</ixx>
+                    <ixy>-7.17547e-08</ixy>
+                    <ixz>-1.37412e-08</ixz>
+                    <iyy>1.29576e-06</iyy>
+                    <iyz>8.03391e-10</iyz>
+                    <izz>4.61264e-07</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <link name="ae_2dof_be_x4_3">
+            <frame name="ae_2dof_be_x4_3_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_be_x4_3_0_ae_2dof_be_x4_3_visual">
+                <pose>0.053 0.0147756 0.0575 -1.5708 1.40152 -1.63647</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_3.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_be_x4_3_0_ae_2dof_be_x4_3_visual">
+                <pose>0.053 0.0147756 0.0575 -1.5708 1.40152 -1.63647</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_3.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_be_x4_3_frame">0.0527184 0.0104942 0.0323946 0 0 0</pose>
+                <mass>0.000446715</mass>
+                <inertia>
+                    <ixx>1.23643e-08</ixx>
+                    <ixy>4.66695e-12</ixy>
+                    <ixz>1.11338e-10</ixz>
+                    <iyy>1.23378e-08</iyy>
+                    <iyz>-6.51404e-10</iyz>
+                    <izz>2.33308e-09</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <joint name="ignore2" type="fixed">
+            <pose>0.052848 0.0124642 0.0439465 0.169272 -7.20979e-17 3.07591</pose>
+            <parent>ae_2dof_be_x4_3</parent>
+            <child>ae_2dof_bc_x1</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <joint name="pitch2" type="revolute">
+            <pose>0.0527208 0.0105311 0.0326109 2.07839e-16 0.169272 1.50512</pose>
+            <parent>ae_2dof_e2_x1</parent>
+            <child>ae_2dof_be_x4_3</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <joint name="pitch1" type="revolute">
+            <pose>0.053 0.0492775 0.0516161 -0.0647426 1.40152 -1.63647</pose>
+            <parent>ae_2dof_e1_x1</parent>
+            <child>ae_2dof_e2_x1</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <joint name="leftPlate" type="revolute">
+            <pose>0.011 0.0147756 0.0575 1.5708 -0.168914 -1.5708</pose>
+            <parent>ae_2dof_b_x1</parent>
+            <child>ae_2dof_e1_x1</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                    <lower>-0.785398</lower>
+                    <upper>0.785398</upper>
+                </limit>
+            </axis>
+        </joint>
+
+        <link name="ae_2dof_e3_x1">
+            <frame name="ae_2dof_e3_x1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_e3_x1_0_ae_2dof_e3_x1_visual">
+                <pose>0.053 0.0147756 0.0175 1.5708 -1.65952e-16 3.07591</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_e3_x1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_e3_x1_0_ae_2dof_e3_x1_visual">
+                <pose>0.053 0.0147756 0.0175 1.5708 -1.65952e-16 3.07591</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_e3_x1.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_e3_x1_frame">0.0529983 0.0147756 0.028762 0 0 0</pose>
+                <mass>0.00520779</mass>
+                <inertia>
+                    <ixx>1.58288e-06</ixx>
+                    <ixy>-6.95389e-12</ixy>
+                    <ixz>2.72461e-08</ixz>
+                    <iyy>3.44644e-06</iyy>
+                    <iyz>3.32551e-12</iyz>
+                    <izz>1.99459e-06</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <link name="ae_2dof_be_x4_2">
+            <frame name="ae_2dof_be_x4_2_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_be_x4_2_0_ae_2dof_be_x4_2_visual">
+                <pose>0.053 0.0147756 0.0575 -2.97232 -3.35829e-16 3.07591</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_2.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_be_x4_2_0_ae_2dof_be_x4_2_visual">
+                <pose>0.053 0.0147756 0.0575 -2.97232 -3.35829e-16 3.07591</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_2.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_be_x4_2_frame">0.0275855 0.0164472 0.0575 0 0 0</pose>
+                <mass>0.000446715</mass>
+                <inertia>
+                    <ixx>2.33308e-09</ixx>
+                    <ixy>6.51404e-10</ixy>
+                    <ixz>-1.11338e-10</ixz>
+                    <iyy>1.23378e-08</iyy>
+                    <iyz>4.66695e-12</iyz>
+                    <izz>1.23643e-08</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <link name="ae_2dof_bc_x1">
+            <frame name="ae_2dof_bc_x1_frame">
+                <pose>0 0 0 0 -0 0</pose>
+            </frame>
+            <visual name="ae_2dof_bc_x1_0_ae_2dof_be_x4_1_visual">
+                <pose>0.053 0.0147756 0.0575 1.5708 -1.40152 1.50512</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_bc_x1_0_ae_2dof_be_x4_1_visual">
+                <pose>0.053 0.0147756 0.0575 1.5708 -1.40152 1.50512</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_1.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="ae_2dof_bc_x1_1_ae_2dof_bc_x1_visual">
+                <pose>0.053 0.0147756 0.0575 0.169272 -7.20979e-17 3.07591</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_bc_x1.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_bc_x1_1_ae_2dof_bc_x1_visual">
+                <pose>0.053 0.0147756 0.0575 0.169272 -7.20979e-17 3.07591</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_bc_x1.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="ae_2dof_bc_x1_2_ae_2dof_be_x4_4_visual">
+                <pose>0.053 0.0147756 0.0575 2.97232 3.48989e-15 -0.0656786</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_4.stl</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.309804 0.309804 0.309804 1</ambient>
+                    <diffuse>0.309804 0.309804 0.309804 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <emissive>0 0 0 0</emissive>
+                </material>
+            </visual>
+            <collision name="ae_2dof_bc_x1_2_ae_2dof_be_x4_4_visual">
+                <pose>0.053 0.0147756 0.0575 2.97232 3.48989e-15 -0.0656786</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://urdf/ae_2dof_be_x4_4.stl</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose frame="ae_2dof_bc_x1_frame">0.0538371 0.0181114 0.0574542 0 0 0</pose>
+                <mass>0.0184606</mass>
+                <inertia>
+                    <ixx>3.60272e-06</ixx>
+                    <ixy>-1.11307e-07</ixy>
+                    <ixz>2.71758e-08</ixz>
+                    <iyy>6.38979e-06</iyy>
+                    <iyz>-4.30324e-07</iyz>
+                    <izz>3.66654e-06</izz>
+                </inertia>
+            </inertial>
+        </link>
+
+        <joint name="ignore" type="fixed">
+            <pose>0.0392796 0.0156781 0.0575 -1.5708 -0.169272 -1.63647</pose>
+            <parent>ae_2dof_be_x4_2</parent>
+            <child>ae_2dof_bc_x1</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <joint name="roll1" type="revolute">
+            <pose>0.0278044 0.0164328 0.0575 1.5708 0.169272 1.50512</pose>
+            <parent>ae_2dof_e3_x1</parent>
+            <child>ae_2dof_be_x4_2</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                </limit>
+            </axis>
+        </joint>
+
+        <joint name="bottomPlate" type="revolute">
+            <pose>0.053 0.0147756 0.011 -3.14159 -1.65952e-16 3.07591</pose>
+            <parent>ae_2dof_b_x1</parent>
+            <child>ae_2dof_e3_x1</child>
+            <axis>
+                <xyz>0 0 1</xyz>
+                <limit>
+                    <effort>1</effort>
+                    <velocity>20</velocity>
+                    <lower>2.18166</lower>
+                    <upper>3.75246</upper>
+                </limit>
+            </axis>
+        </joint>
+        <!--<plugin name="ojos" filename="libojos.so"/>-->
+
+    </model>
+</sdf>

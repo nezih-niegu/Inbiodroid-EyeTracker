@@ -1,0 +1,266 @@
+<robot name="onshape">
+    <link name="base_link">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </link>
+    <link name="ae_2dof_b_x1">
+        <visual>
+            <origin xyz="3.68629e-18 0.022 -1.37008e-17" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_b_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_b_x1_material">
+                <color rgba="0.792157 0.819608 0.933333 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.68629e-18 0.022 -1.37008e-17" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_b_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_b_x1_material">
+                <color rgba="0.792157 0.819608 0.933333 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0236304 0.0170064 0.023624" rpy="0 0 0" />
+            <mass value="0.0680606" />
+            <inertia ixx="7.6719e-05" ixy="-3.40547e-09" ixz="-2.42982e-09" iyy="4.49475e-05" iyz="2.23644e-05" izz="4.49198e-05" />
+        </inertial>
+    </link>
+
+    <joint name="base_to_ae" type="fixed">
+        <parent link="base_link" />
+        <child link="ae_2dof_b_x1" />
+
+    </joint>
+    <link name="ae_2dof_e1_x1">
+        <visual>
+            <origin xyz="-0.035 0 -0.042" rpy="1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_e1_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_e1_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.035 0 -0.042" rpy="1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_e1_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_e1_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0195401 4.09697e-08 -0.0162465" rpy="0 0 0" />
+            <mass value="0.00262801" />
+            <inertia ixx="1.17275e-06" ixy="-1.20743e-12" ixz="-2.3302e-12" iyy="5.63564e-07" iyz="-4.21875e-07" izz="6.39138e-07" />
+        </inertial>
+    </link>
+
+    <link name="ae_2dof_e2_x1">
+        <visual>
+            <origin xyz="6.93889e-18 6.93889e-18 0" rpy="1.5708 1.57545e-17 1.05083e-17" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_e2_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_e2_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="6.93889e-18 6.93889e-18 0" rpy="1.5708 1.57545e-17 1.05083e-17" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_e2_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_e2_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="5.13311e-07 3.75578e-08 0.0193382" rpy="0 0 0" />
+            <mass value="0.00267944" />
+            <inertia ixx="4.61112e-07" ixy="1.71391e-12" ixz="-1.04145e-11" iyy="1.71654e-06" iyz="9.97828e-15" izz="1.28352e-06" />
+        </inertial>
+    </link>
+
+    <link name="ae_2dof_be_x4">
+        <visual>
+            <origin xyz="6.93889e-18 6.93889e-18 0.02525" rpy="1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="6.93889e-18 6.93889e-18 0.02525" rpy="1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="6.56226e-18 3.68774e-09 -0.000219414" rpy="0 0 0" />
+            <mass value="0.000446715" />
+            <inertia ixx="1.23651e-08" ixy="8.2329e-15" ixz="4.25482e-26" iyy="2.28961e-09" iyz="-1.29592e-25" izz="1.23805e-08" />
+        </inertial>
+    </link>
+
+    <joint name="pitch2" type="revolute">
+        <origin xyz="0.02525 6.93889e-18 0.035" rpy="-1.5708 -0.962468 1.5708" />
+        <parent link="ae_2dof_e2_x1" />
+        <child link="ae_2dof_be_x4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="pitch1" type="revolute">
+        <origin xyz="-0.035 -1.38778e-17 -0.042" rpy="1.5708 -0.0595024 1.5708" />
+        <parent link="ae_2dof_e1_x1" />
+        <child link="ae_2dof_e2_x1" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="leftPlate" type="revolute">
+        <origin xyz="0.011 0.0147756 0.0575" rpy="1.5708 0.0851817 -1.5708" />
+        <parent link="ae_2dof_b_x1" />
+        <child link="ae_2dof_e1_x1" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="-0.785398" upper="0.785398" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <link name="ae_2dof_e3_x1">
+        <visual>
+            <origin xyz="6.93889e-18 6.93889e-18 -0.0065" rpy="-1.5708 -2.33652e-32 -9.89064e-17" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_e3_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_e3_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="6.93889e-18 6.93889e-18 -0.0065" rpy="-1.5708 -2.33652e-32 -9.89064e-17" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_e3_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_e3_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="1.65801e-06 -1.87895e-07 -0.017762" rpy="0 0 0" />
+            <mass value="0.00520779" />
+            <inertia ixx="1.58108e-06" ixy="-7.15715e-12" ixz="-4.82779e-11" iyy="3.44644e-06" iyz="-2.86194e-12" izz="1.99638e-06" />
+        </inertial>
+    </link>
+
+    <link name="ae_2dof_be_x4_2">
+        <visual>
+            <origin xyz="3.19189e-16 5.55112e-17 0.02525" rpy="1.71016e-15 7.25283e-15 1.5708" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="3.19189e-16 5.55112e-17 0.02525" rpy="1.71016e-15 7.25283e-15 1.5708" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="2.98372e-16 6.245e-17 0.02525" rpy="-1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_bc_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_bc_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.98372e-16 6.245e-17 0.02525" rpy="-1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_bc_x1.stl" />
+            </geometry>
+            <material name="ae_2dof_bc_x1_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="6.93889e-18 0 0.02525" rpy="1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="6.93889e-18 0 0.02525" rpy="1.5708 1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="2.63678e-16 5.55112e-17 0.02525" rpy="1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="2.63678e-16 5.55112e-17 0.02525" rpy="1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package://ojos/urdf/ae_2dof_be_x4.stl" />
+            </geometry>
+            <material name="ae_2dof_be_x4_material">
+                <color rgba="0.309804 0.309804 0.309804 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.00326388 0.000512496 0.02525" rpy="0 0 0" />
+            <mass value="0.0189074" />
+            <inertia ixx="4.19426e-06" ixy="3.75549e-08" ixz="6.7282e-09" iyy="3.87701e-06" iyz="3.44606e-14" izz="6.21839e-06" />
+        </inertial>
+    </link>
+
+    <joint name="roll1" type="revolute">
+        <origin xyz="0.02525 -1.79717e-15 -0.0465" rpy="1.5708 -0.103865 -1.5708" />
+        <parent link="ae_2dof_e3_x1" />
+        <child link="ae_2dof_be_x4_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="bottomPlate" type="revolute">
+        <origin xyz="0.053 0.0147756 0.011" rpy="-3.14159 -2.19608e-17 2.53073" />
+        <parent link="ae_2dof_b_x1" />
+        <child link="ae_2dof_e3_x1" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" lower="2.18166" upper="3.75246" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+
+</robot>

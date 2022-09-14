@@ -1,0 +1,22 @@
+<launch> 
+    <!-- values passed by command line input -->
+    <arg name="model" default="robot.sdf"/>
+    <!-- set these parameters on Parameter Server -->
+    <param name="robot_description" textfile="$(find ojos)/urdf/$(arg model)"/>
+    <!-- Start 3 nodes: joint_state_publisher, robot_state_publisher and rviz 
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />-->
+    <!--<node name="rviz" pkg="rviz" type="rviz" />
+    -->
+    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="worlds/empty.world"/> <!-- Note: the world_name is with respect to GAZEBO_RESOURCE_PATH environmental variable -->
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="recording" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+    
+    <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" args="-file $(find ojos)/urdf/$(arg model) -sdf -model onshape" respawn="false" output="screen" />
+</launch>
